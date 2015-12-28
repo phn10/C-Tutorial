@@ -38,10 +38,10 @@ int main()
 		cout << "Enter name (Enter ""q"" to quit): ";
 		cin >> input;
 		if (input == "q") break; // Press q to quit the program
-		while (input.compare(names[i]) != 0 && i < size)
+		while (input.compare(names[i]) != 0 && i < size) // function will return 0 if two strings match
 		{
 			i += 1;
-			if (i == size) break; // if i == size, then names[i] will be invalid, so we need to break here!
+			if (i == size) break; // names[size] will be invalid (line 41), so we need to break when i equal to size
 		}
 		if (i < size) cout << names[i] << " ranked " << i + 1 << " with " << amount[i] << " names." << endl;
 		else cout << input << " is not found." << endl; // when i == size, which means the program read all data but cannot find any similar names
