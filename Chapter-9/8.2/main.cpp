@@ -31,7 +31,10 @@ int main()
 	cout << fixed << showpoint << setprecision(4);
 	aver = average(ptr, size);
 	cout << "The average score is: " << aver << endl;
-
+	
+	delete [] ptr;
+	ptr = nullptr;
+	
 	cin.get();
 	cin.get();
 	return 0;
