@@ -22,7 +22,12 @@ int main()
 
 	sortSelectArr(scores, names, size);
 	showArr(scores, names, size);
-
+	
+	delete [] score;
+	delete [] names;
+	score = nullptr;
+	names = nullptr;
+	
 	cin.get();
 	cin.get();
 	return 0;
