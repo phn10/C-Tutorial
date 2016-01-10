@@ -53,6 +53,7 @@ void displayDrinks(Drinks *type)
 	cout << "-----------------------------------------------------------\n";
 	for (int index = 0; index < 5; index++)
 	{
+		cout << fixed << showpoint << setprecision(2);
 		cout << type[index].name << "\t\t" 
 			 << type[index].cost << "\t\t" 
 			 << type[index].number << endl;
