@@ -26,3 +26,6 @@ int main()
 	std::cin.get();
 	return 0;
 }
+
+// Program should use cstring instead of string. While using cstring, we can define the number of char, 
+// which can align the table better
