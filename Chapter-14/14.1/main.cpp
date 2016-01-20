@@ -5,27 +5,27 @@ using namespace std;
 
 int main()
 {
-	string printResult;
-	char num[4];
-	char n = '0';
+	char num[4] = {'0', '0', '0', '0'};
 	int count = 0;
-	cout << "Enter a number: ";
-	while(n != '\n')
+	char n;
+	string printResult;
+
+
+	cout << "Enter number: ";
+	while (count < 4)
 	{
 		cin.get(n);
+		if (n == '\n') break;
 		num[count] = n;
 		count++;
-		if (count > 4) break;
-	}	
-	count = count - 1;
-	cout << "return count: " << count << endl;
-	Number number(num, 4);
+	}
+
+	Number number(num, count);
 	printResult = number.printString();
 
 	cout << "Your number is: " << printResult << endl;
-	
+
 	cin.get();
 	cin.get();
 	return 0;
 }
-
