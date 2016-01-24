@@ -17,10 +17,10 @@ class NumberList
 		// constructor 
 		NumberList()
 		{ head = nullptr; }
-
+		~NumnberList();
 		~NumberList();
 		void appendNode(int );
-		void insertNode(int );
+		void insertNode(int , int );
 		void deleteNode(int );
 		void displayList() const;
 };
