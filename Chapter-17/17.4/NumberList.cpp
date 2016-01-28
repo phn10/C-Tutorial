@@ -1,4 +1,4 @@
-#include "NumberList.h
+#include "NumberList.h"
 
 // function definition
 // basically, this function will flip the array of struct from left to right
