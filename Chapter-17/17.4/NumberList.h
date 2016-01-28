@@ -15,7 +15,8 @@ class NumberList
 			ListNode *previous; // previous pointer
 		};
 
-		ListNode *head;
+		ListNode *head; // beginning pointer
+		ListNode *end; // end pointer
 		
 	public:
 		NumberList()
