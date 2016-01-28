@@ -22,7 +22,7 @@ void NumberList::reverseNode()
 		i += 1;
 	}
 	head = nodePtr; // assign head pointer new position
-
+	
   // while inside the array
 	while (i >= 0)
 	{
